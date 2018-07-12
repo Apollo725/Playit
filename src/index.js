@@ -9,6 +9,7 @@ import configureStore from './store/configureStore';
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import 'mdbreact/dist/css/mdb.css';
+import 'react-id-swiper/src/styles/css/swiper.css';
 
 const store = configureStore();
 

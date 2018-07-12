@@ -9,8 +9,10 @@ class OnBoardingArtist extends Component {
         return (
             <div className="onBoardingWrapper">
                 <Header />
-                <Brand />
-                <SlideSideBar className="slideBarWrapper"/>
+                <div className="boardingContentWrapper">
+                    <Brand />
+                    <SlideSideBar className="slideBarWrapper"/>
+                </div>
             </div>
         );
     }
