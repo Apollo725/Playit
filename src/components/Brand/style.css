@@ -1,0 +1,13 @@
+.brandBar {
+    justify-content: center !important;
+    background-color: #2E2E2E !important;
+}
+.brandBarItem {
+    color: white;
+    margin-top: 10px;
+}
+
+/* navbar-brand focus hover css */
+.navbar-brand:focus, .navbar-brand:hover {
+    color: #e9ae20 !important;
+}

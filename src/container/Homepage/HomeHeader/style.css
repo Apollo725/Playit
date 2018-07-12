@@ -1,0 +1,103 @@
+.headerWrapper {
+    margin: 0 auto;
+    width: 80%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerLogo {
+    float: left;
+    vertical-align: middle;
+    display:table-cell;
+}
+.logo {
+    width: 200px;
+    height: 70px;
+}
+.headerMenu {
+    float: right;
+    font-size: 24px;
+    color: white;
+}
+.menuList {
+   overflow: hidden;
+}
+.menuList li {
+    display: inline-block;
+    padding: 30px;
+
+    margin-top: 20px;
+}
+.link {
+    color: white !important;
+    text-decoration: none !important;
+}
+.link:hover{
+    color: #e9ae20 !important;
+}
+
+.facebookButton {
+    width: 300px;
+    height: 50px;
+    border-radius: 0 !important;
+}
+.termsLabel {
+    color: white !important;
+    margin-top: 20px;
+}
+.termsLabel > p {
+    margin-top: 5px;
+    font-weight: bold;
+}
+.facebook {
+    margin-right: 30px !important;
+    margin-top: -10px !important;
+}
+.profileCard {
+    width: 150px !important;
+}
+.profileCardGroup {
+    width: 330px;
+}
+.profileCardGroupWrapper > label {
+    margin-left: 70px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+.selectedProfileCard {
+    width: 200px !important;
+}
+.profileCardWrapper {
+    text-align: center;
+    color: white !important;
+}
+.profileCardWrapper > button {
+    background-color: transparent !important;
+    border: none !important;
+    color: white !important;
+    float: left !important;
+    padding: 0 0 20px 0 !important;
+}
+.profileCardWrapper > label{
+    font-size: 16px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+
+}
+.profileCardWrapper > div > a > img {
+    width: 30px;
+    height: 30px;
+}
+.profileCardWrapper > div > a {
+    margin: 10px;
+    color: white !important;
+}
+.profileCardWrapper > div > label {
+    color: white !important;
+}
+
+.loginAsBar > * {
+    display: inline-block;
+}

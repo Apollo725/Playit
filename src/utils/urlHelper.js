@@ -1,0 +1,1 @@
+export const assets_url = "http://localhost:3000/src/assets";

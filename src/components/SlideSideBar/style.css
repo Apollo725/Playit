@@ -1,0 +1,19 @@
+.sliderItem {
+}
+.sliderItemText {
+    font-size: 20px !important;
+    color: white;
+    float: left;
+}
+.sliderContent{
+    display: flex;
+}
+.sliderIndicate {
+ color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.customSlider {
+    width: 150px !important;
+}
