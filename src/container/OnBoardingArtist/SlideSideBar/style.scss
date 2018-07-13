@@ -1,0 +1,109 @@
+.sliderItem {
+}
+.sliderItemText {
+  font-size: 20px !important;
+  color: white;
+  float: left;
+}
+.sliderContent {
+  display: flex;
+  flex: 1;
+}
+.sliderIndicate {
+  display: flex;
+  align-items: center;
+  flex: 3;
+}
+.customSlider {
+  width: 150px !important;
+}
+.slick-slider {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.customSlider .slick-list {
+  padding: 60px 40px !important;
+}
+
+.swiper-container {
+  width: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 250px;
+  flex: 1;
+}
+.right-section {
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-description {
+  flex: 1;
+}
+.swiper-slide {
+  height: 40px;
+  color: #999;
+}
+.container {
+  margin-top: 50px;
+}
+
+.right-section,
+.left-section {
+  background-color: #333;
+}
+
+.sliderDemo {
+  color: #fff;
+}
+
+.swiper-slide div {
+  width: 100%;
+  text-align: center;
+}
+
+.swiper-slide-active {
+  font-size: 20px;
+  color: #fff;
+}
+.swiper-slide-next {
+  font-size: 14px;
+}
+.swiper-slide-next + div {
+  font-size: 10px;
+}
+.swiper-slide-prev {
+  font-size: 14px;
+  opacity: 0;
+}
+
+.item-description.jumbotron {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #999;
+  border-radius: 0 !important;
+  border-left: none;
+  border-right: none;
+  margin: 0 100px;
+}
+
+.swiper-slide-active .nav-item {
+  position: relative;
+}
+.swiper-slide-active .nav-item:hover {
+  cursor: pointer;
+}
+.swiper-slide-active span {
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #fff;
+  top: 50%;
+  transform: translateY(-50%);
+}

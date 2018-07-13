@@ -1,0 +1,16 @@
+.ConfirmEditYourInfo{margin-left: 150px; margin-top: 60px;
+    .userProfileBox{background: transparent; display: flex; flex-direction: row;  
+        border: 1px solid rgba(0,0,0,0.30);
+        box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 2px 15px rgba(0,0,0,0.30);
+        .userProfilePicture{ flex: 1; padding: 20px; img{width: 100%;} width: 300px;}
+        .userProfileDetail{ flex: 2; width: 500px; text-align: left; background: transparent; color: #fff; padding:20px 20px 20px 0;
+            h2{font-size: 26px; margin: 10px 0; font-weight: 400;}
+            h3{font-size: 18px; span{color: #e9ae20;} margin: 10px 0;}
+            .infoBox{ display: flex; flex-direction: row;
+                h3{flex: 1; font-size: 18px; i{margin-right: 10px !important; font-size: 18px;}}
+            }
+            h4{font-size: 22px; font-weight: bold; margin: 10px 0;}
+            p{font-size: 14px; text-align: justify; color: #e9ae20;}
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ContactUs  from '../../../components/ContactUs';
-import './style.css';
+import './style.scss';
 
 class HomeFooter extends Component {
     render() {

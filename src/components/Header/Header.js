@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Navbar, NavbarBrand, NavbarNav, NavItem, NavLink, Collapse, NavbarToggler } from 'mdbreact';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import './style.css';
+import './style.scss';
 
 import logo from '../../assets/imgs/logo.png';
 import profile from '../../assets/imgs/profile1.png'

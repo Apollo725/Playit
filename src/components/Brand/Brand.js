@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavbarBrand } from 'mdbreact';
-import './style.css';
+import './style.scss';
 
 class Brand extends Component {
     render() {
