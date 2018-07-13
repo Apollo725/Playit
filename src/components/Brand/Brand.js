@@ -6,7 +6,7 @@ class Brand extends Component {
     render() {
         return (
             <div className="brandBar">
-                <NavbarBrand href="#" className="brandBarItem">YOU</NavbarBrand>
+                <NavbarBrand href="#" className="brandBarItem active">YOU</NavbarBrand>
                 <NavbarBrand href="#" className="brandBarItem">PLAYS</NavbarBrand>
             </div>
         );

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
 import profile1 from '../../../assets/imgs/profile2.png';
+import artist from '../../../assets/imgs/artist.png';
 import "./style.scss";
 
 class ConfirmEditYourInfo extends Component {
@@ -18,6 +19,13 @@ class ConfirmEditYourInfo extends Component {
     
     return (
       <div className="ConfirmEditYourInfo">
+        <h2 className="heading">
+          Tell us about yourself
+          <span>
+            <img src={artist} alt="" width="40"/>
+            <p>vehicula tortor tincidunt mauris. Nibh voales fringilla per ullamcorper id donec, dui dolores in eu lorem dui vel. Aliquet eu eu fermentum wisi et, vitae dapibus morbi a ultricies, liblacerat wisinsectetuer plateaadipiscing cras.</p>
+          </span>
+        </h2>
         <div className="userProfileBox">
           <div className="userProfilePicture">
             <img src={profile1} alt=""/>
