@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './style.css';
+import './style.scss';
 import { Col, Container, Row, Footer, Button, FormInline } from 'mdbreact';
 import blog from '../../assets/imgs/blog_icon.png';
 import info from '../../assets/imgs/info_icon.png';

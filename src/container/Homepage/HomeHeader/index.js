@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { getProfiles } from '../../../actions/actions';
-import './style.css';
+import './style.scss';
 import host from '../../../assets/imgs/host.png';
 import artist from '../../../assets/imgs/artist.png';
 
@@ -112,7 +112,7 @@ class HomeHeader extends Component {
                                 popupContent={popupContent}>
                             </CustomPopup>
                         </li>
-                        <li><Link to='/about' className='link'>About</Link></li>
+                        <li><Link to='/onboardingartist' className='link'>About</Link></li>
                         <li><Link to='/faq' className='link'>FAQ</Link></li>
                         <li><Link to='/contact' className='link'>Contact Us</Link></li>
                         <li><Link to='/blog' className='link'>Add blog</Link></li>

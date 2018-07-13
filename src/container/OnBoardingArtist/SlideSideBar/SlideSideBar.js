@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Swiper from "react-id-swiper";
 
+import {ConfirmEditYourInfo} from '../ConfirmEditYourInfo';
+
 import "./style.scss";
 
 class SlideSideBar extends Component {
@@ -8,13 +10,14 @@ class SlideSideBar extends Component {
     super(props);
     this.state = {
       name: "",
+      tempComp : null,
       textArray: [
-        { title: "Confirm or Edit Your info1", index: 1 },
-        { title: "Add or Edit your profile media2", index: 2 },
-        { title: "Confirm and Add unavailable dates3", index: 3 },
-        { title: "Confirm or Edit Your info4", index: 4 },
-        { title: "Confirm or Edit Your info5", index: 5 },
-        { title: "Confirm or Edit Your info6", index: 6 }
+        { title: "Confirm or Edit Your info", index: 1 , component: 'ConfirmEditYourInfo'},
+        { title: "Add or Edit your profile media2", index: 2 , component: 'ConfirmEditYourInfo1'},
+        { title: "Confirm and Add unavailable dates3", index: 3 , component: 'ConfirmEditYourInfo1'},
+        { title: "Confirm or Edit Your info4", index: 4 , component: 'ConfirmEditYourInfo1'},
+        { title: "Confirm or Edit Your info5", index: 5 , component: 'ConfirmEditYourInfo1'},
+        { title: "Confirm or Edit Your info6", index: 6 , component: 'ConfirmEditYourInfo1'}
       ]
     };
     this.handleClick = this.handleClick.bind(this);
@@ -22,12 +25,14 @@ class SlideSideBar extends Component {
   }
   componentDidMount() {
     this.setState(prevState => ({
-      name: this.state.textArray[0].title
+      name: this.state.textArray[0].title,
+      tempComp: this.state.textArray[0].component
     }));
   }
   handleClick = e => {
     this.setState(prevState => ({
-      name: e.title
+      name: e.title,
+      tempComp: e.component
     }));
   };
   createSlide = (e, handleClick) => {
@@ -50,6 +55,12 @@ class SlideSideBar extends Component {
     }
     return table;
   };
+
+  getChildComponent = (name) => {
+    console.log("VIVEK")
+    return ConfirmEditYourInfo
+  }
+  
   render() {
     let that = this;
     const params = {
@@ -65,7 +76,8 @@ class SlideSideBar extends Component {
       on: {
         slideChange: function() {
           that.setState(prevState => ({
-            name: that.state.textArray[this.realIndex].title
+            name: that.state.textArray[this.realIndex].title,
+            tempComp: that.state.textArray[this.realIndex].component
           }));
         }
       }
@@ -79,9 +91,7 @@ class SlideSideBar extends Component {
           {this.createSlide()}
         </Swiper>
         <div className="sliderIndicate">
-          <div className="jumbotron item-description">
-            <h1>{this.state.name}</h1>
-          </div>
+          {this.state.tempComp === "ConfirmEditYourInfo" ? <ConfirmEditYourInfo name={'vivek'}/> : null }
         </div>
       </div>
     );

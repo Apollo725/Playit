@@ -1,0 +1,16 @@
+.onBoardingWrapper {
+    background: #2E2E2E !important;
+    width: 100%;
+    height: 100vh;
+}
+.slideBarWrapper {
+    width: 30% !important;
+    background-color: red !important;
+}
+.boardingContentWrapper{
+    height: calc(100vh - 64px);
+    overflow: hidden;
+    background: url('../../assets/imgs/bg.png') no-repeat center center;
+    background-size: cover;
+    // background: radial-gradient(circle at top center,#737373 10px, #000000);
+}
